@@ -624,7 +624,10 @@ def main(argv):
         else:
             usage();
             exit(1);
-
+    # overwrite the guide and Guide  Guide.CROSS_STAR      
+    guide = Guide.CROSS_STAR.name.lower();
+    stroke_order_color = 'red';
+  
     if info_mode == sheet_mode:
         info_mode = True;
         sheet_mode = True;
